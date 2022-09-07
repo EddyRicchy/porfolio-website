@@ -18,7 +18,6 @@ if($fullname && $email && $subject && $message) {
 		if($pdo) {
 			echo "Connected to the $db database successfully!";
 		}
-
 	} catch(PDOException $e) {
 		echo $e->getMessage();
 	}
