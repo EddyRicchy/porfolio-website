@@ -1,0 +1,215 @@
+/* start: styling for page-title section */
+
+.page-title {
+	border-top: 2px solid none;
+	border-bottom: 2px solid none;
+	padding: 30px 40px;
+	margin-top: 52px;
+}
+
+.page-title h4 {
+	font-weight: 200;
+	font-size: 14px;
+	color: #aaaaaa;
+} 
+
+/* end: styling for page-title section */
+
+/* start: styling for map section */
+
+#map {
+	padding: 40px;
+	position: relative;
+}
+
+#google-maps {
+	width: 100%;
+	height: 100%;
+}
+
+#google-maps img {
+	width: 100%;
+}
+
+.landscape {
+	display: none;
+}
+
+/* end: styling for map section */
+
+/* start: styling for contact section */
+
+#contact {
+	padding: 0 40px;
+	position: relative;
+}
+
+.contact-information .flex {
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+.contact-information .info .icon {
+	word-wrap: break-word;
+}
+
+.contact-information .info .icon span {
+	font-size: 40px;
+	color: #007ced;
+	font-weight: 300;
+}
+
+.contact-information .info .details {
+	margin-left: 20px;
+}
+
+.contact-form {
+	margin-top: 40px;
+}
+
+.contact-form .line-style {
+	width: 215px;
+}
+
+.form {
+	margin-top: 30px;
+}
+
+.form .details, .form .message, .form .details div {
+	width: 100%;
+}
+
+.form .details div:not(.fullname) {
+	margin-top: 20px;
+}
+
+.form .details > div, .form .message {
+	position: relative;
+} 
+
+.form .details > div div, .form .message div {
+	position: absolute;
+}
+
+.form .details > div div {
+	top: -20px;
+}
+
+.form .message {
+	margin-top: 20px;
+}
+
+.form .message div {
+	top: 0;
+}
+
+.form-input-animate {
+	max-width: 20% !important;
+	padding: 10px;
+	border-radius: 5px;
+	outline: none;
+	background: none;
+	border: 2px solid #007ced;
+	display: none;
+	transition: 0.5 ease;
+}
+
+.form .details .form-input-animate {
+	height: 42px;
+}
+
+.form .message .form-input-animate {
+	height: 171px;
+}
+
+input, textarea {
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	outline: none;
+	background: none;
+	border: 2px solid #555;
+	font-family: 'Poppins', sans-serif;
+	color: #bfbfbf;
+	transition: 0.5s;
+}
+
+input {
+	height: 42px;
+}
+
+textarea {
+	height: 171px;
+	resize: none;
+}
+
+input::placeholder, textarea::placeholder {
+	font-family: 'Poppins', sans-serif;
+	color: #bfbfbf;
+}
+
+#send-message {
+	color: #fff;
+	background-color: #333333;
+	padding: 11.2px 29.4px;
+	font-family: 'Poppins', sans-serif;
+	border-radius: 20px;
+	box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.25);
+	cursor: pointer;
+	border: 2px solid #007ced;
+	margin-top: 20px;
+	transition: 1s;
+}
+
+#send-message:hover {
+	background-color: #007ced !important;
+	transition: 0.5s;
+}
+
+
+/* end: styling for contact section */
+
+/* start: media query responsiveness */
+
+@media only screen and (orientation: landscape) {
+	.page-title {
+		padding: 65px 70px;
+		margin-top: 0;
+	}
+
+	#map {
+		padding: 65px 70px;
+	}
+
+	.portrait {
+		display: none;
+	}
+
+	.landscape {
+		display: block;
+	}
+
+	#contact {
+		padding: 0 70px;
+	}
+
+	.contact-information {
+		width: 30%;
+	}
+
+	.contact-form {
+		width: 70%;
+		margin-top: 0;
+	}
+
+	.form .flex {
+		gap: 20px;
+	}
+
+	.form .details, .form .message {
+		width: 48%;
+		margin-top: 0;
+	}
+}
+
+/* end: media query responsiveness */

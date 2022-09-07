@@ -1,0 +1,679 @@
+*, *::before, *::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/************ Styling For Mobile Devices **************/
+
+/*start: general styling */
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: none;
+	transition: 1s;
+}
+
+body::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+
+body::-webkit-scrollbar-track {
+	background-color: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: #d5d5d5;
+}
+
+h1 {
+	font-size: 36px;
+	font-weight: 600;
+}
+
+h2 {
+	font-size: 21px;
+}
+
+h4 {
+	font-size: 16px;
+}
+
+h1, h2, h4 {
+	color: #f5f5f5;
+}
+
+img {
+	width: 40px;
+}
+
+#header {
+	padding: 10px 18px;
+	box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.1);
+	background-color: #222222;
+	position: fixed;
+	z-index: 100;
+	width: 100vw;
+	top: 0;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#header .flex {
+	position: relative;
+	align-items: center;
+}
+
+.line-style {
+	background-color: #353535;
+	height: 2px;
+}
+
+.inner-line-style {
+	width: 35px;
+	height: 100%;
+	background-color: #007ced;
+}
+
+#action {
+	position: fixed;
+	width: fit-content;
+	z-index: 1000;
+	bottom: 1%;
+	right: 3%;
+	background: none;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.toggle-dark-mode {
+	background-color: none;
+	outline: none;
+	border: none;
+	width: 50px;
+	height: 50px;
+	border-radius: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	box-shadow: 0 0 12px 0 rgb(0 0 0 / 12%);
+}
+
+.toggle-dark-mode img {
+	width: 30px;
+}
+
+/*end:  general styling */
+
+/* start: styling for author */
+
+.author {
+	display: flex;
+	align-items: center;
+}
+
+.author .logo {
+	width: 32px;
+	height: 32px;
+	background-color: #007ced;
+	font-size: 18px;
+	font-weight: 900;
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+}
+
+.author .logo div {
+	width: 50%;
+	position: absolute;
+	top: 50%;
+	left: 55%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+}
+
+.author .name {
+	color: #fff;
+	margin-left: 10px;
+}
+
+.author .name .first-name {
+	font-weight: 600;
+}
+
+/* end:  styling for author */
+
+/* start: styling for navbar */
+
+.navbar {
+	display: none;
+	position: fixed;
+	top: 50px;
+	background-color: #222222;
+	width: 100vw;
+	height: 100vh;
+	left: 100%;
+	padding: 15px 25px;
+	z-index: 100;
+}
+
+.navbar .nav-items {
+	list-style: none;
+}
+
+.navbar .nav-items li a {
+	color: #d5d5d5;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.navbar .nav-items li:not(.about) {
+	margin-top: 25px;
+}
+
+.navbar .nav-items li.active a {
+	color: #f5f5f5;
+}
+
+.hamburger-menu {
+	position: absolute;
+	right: 0;
+}
+
+.hamburger-menu span i {
+	font-size: 20px;
+	color: #fff;
+}
+
+.rotate {
+	transform: rotate(90deg);
+	transition: .5s;
+}
+
+/* end: styling for navbar */
+
+/* start: styling for intro section */
+
+#intro {
+	margin-top: 100px;
+	padding: 0 60px;
+	opacity: 0;
+}
+
+.profile-image-bg {
+	margin:  0 auto;
+	background-color: #b5b5b5;
+	padding: 15px;
+	width: 189px;
+	height: 189px;
+	border-radius: 50%;
+	box-shadow: 5px 5px 5px 10px rgba(0, 0, 0, 0.05),
+	-5px -5px 5px 10px rgba(0, 0, 0, 0.05), -5px 5px 5px 10px rgba(0, 0, 0, 0.05), 
+	5px -5px 5px 10px rgba(0, 0, 0, 0.05);
+	transition: 1s;
+}
+
+.profile-image-bg .profile-image {
+	border-radius: 50%;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+.profile-image-bg .profile-image img {
+	width: 189px !important;
+}
+
+.info {
+	margin-top: 20px;
+}
+
+.info .description .title,
+.info .description .name {
+	text-align: center;
+}
+
+.info .description .title {
+	min-height: 30px;
+}
+
+.info .description .title h4 {
+	color: #aaaaaa;
+	font-size: 14px !important;
+	font-weight: 300;
+}
+
+.info .description .introduction {
+	color: #d5d5d5;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.75em;
+	margin-top: 20px;
+}
+
+.info .action {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.info .action div div {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.info .action div button, .info .action div a {
+	color: #fff;
+	background-color: #333333;
+	padding: 11.2px 29.4px;
+	font-family: 'Poppins', sans-serif;
+	border-radius: 20px;
+	box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.25);
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+#download-cv {
+	border: 2px solid #007ced;
+}
+
+#contact-me {
+	border: 2px solid #fff;
+}
+
+#download-cv:hover {
+	background-color: #007ced;
+}
+
+#contact-me:hover {
+	background-color: #f5f5f5;
+	color: #222222;
+}
+
+/* end: styling for intro section */
+
+/* start: styling for services section */
+
+#services {
+	padding: 0 40px;
+	margin-top: 70px;
+	position: relative;
+}
+
+#services .line-style {
+	width: 102px;
+}
+
+.service {
+	display: flex;
+}
+
+.service.flex {
+	flex-wrap: nowrap;
+}
+
+.service .icon {
+	margin-top: 25px;
+}
+
+.service .info {
+	margin-left: 20px;
+}
+
+.service .icon span i {
+	color: #007ced;
+	font-size: 30px;
+	opacity: 0.8;
+}
+
+.service .info .description span {
+	color: #d5d5d5;
+	font-size: 12.88px;
+}
+
+/* end: styling for services section */
+
+/* start: styling for testimonial section */
+
+#testimonials {
+	padding: 0 40px;
+	margin-top: 50px;
+	position: relative;
+}
+
+#testimonials .line-style {
+	width: 140px;
+}
+
+.testimonial {
+	display: grid;
+	place-items: center;
+	position: relative;
+	margin-top: 60px;
+	overflow: visible !important;
+}
+
+.testimonial .client-image {
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: -30px;
+}
+
+.testimonial .client-image img {
+	width: 80px !important;
+}
+
+.testimonial .details {
+	background-color: #282828;
+	border: 2px solid #444;
+	width: 80%;
+	height: auto;
+	border-radius: 10px;
+	padding: 0 0 20px 0;
+	margin-top: 20px;
+}
+
+.testimonial .details .details-info .message {
+	color: #d5d5d5;
+	font-size: 14px;
+	font-style: italic;
+	padding: 30px 10px 0 50px;
+	line-height: 25px;
+}
+
+.testimonial .client-info {
+	padding: 0 0 0 20px;
+}
+
+.testimonial .client-info .info {
+	padding: 0 0 0 10px;
+}
+
+.testimonial .client-info .info .name span {
+	font-size: 12.6px;
+	color: #e5e5e5;
+	font-weight: 600;
+}
+
+.testimonial .client-info .info .location span {
+	font-size: 11.2px;
+	color: #bbbbbb;
+}
+
+.testimonial .client-info .info .location {
+	margin-top: -10px;
+}
+
+.testimonial .client-info .icon {
+	margin-top: 20px;
+}
+
+.testimonial .client-info .icon span i {
+	font-size: 22px;
+	color: #444444;
+}
+
+#quote-big {
+	position: absolute;
+	right: 22px;
+	bottom: -25px;
+	z-index: -10;
+}
+
+#quote-big span i {
+	font-size: 50px;
+	color: #444444;
+}
+
+/* end: styling for testimonials section */
+
+/* start: styling for tech-stack section */
+
+#tech-stack {
+	padding: 0 40px;
+	margin-top: 70px;
+	position: relative;
+}
+
+#tech-stack .line-style {
+	width: 120px;
+}
+
+.slick-container {
+	position: relative;
+	width: 100%;
+	height: 100px;
+	margin-top: 40px;
+}
+
+#tech-stack .slick {
+	width: 100%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.stack {
+	padding-bottom: 20px;
+}
+
+.stack i {
+	font-size: 50px;
+	color: #444444;
+}
+
+.stack img {
+	width: 50px;
+	filter: grayscale(100%);
+}
+
+/* end: styling for tech-stack section */
+
+/*start:  styling for footer */
+
+footer {
+	margin-top: 70px;
+	padding: 20px 40px;
+	background-color: #252525;
+	border-top: 2px solid #444444;
+	transition: 1s;
+}
+
+.social-media a:not(#ig) {
+	margin-left: 10px;
+}
+
+.social-media i {
+	color: #dddddd;
+	font-size: 30px;
+	opacity: 0.5;
+}
+
+.copyright span {
+	font-size: 13px;
+	color: #dddddd;
+}
+
+/* end: styling for footer */
+
+/* start:  styling for animate-scroll plugin */
+
+.animate-start {
+	opacity: 0;
+	top: 40px;
+}
+
+.animate-end {
+	opacity: 1;
+	top: 0;
+}
+
+/* end: styling for animate-scroll plugin */
+
+/* start:  media query for responsiveness */
+
+@media only screen and (orientation: landscape) {
+	body {
+		background-image: url('../img/bg.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding: 50px;
+	}
+
+	h1 {
+		font-size: 48px;
+	}
+
+	.container {
+		font-family: 'Poppins', sans-serif;
+		background-color: none;
+		border-radius: 40px;
+		overflow: hidden;
+		transition: 1s;
+	}
+
+	#header {
+		box-shadow: none;
+		position: relative;
+		padding: 50px;
+		width: 100%;
+		background: none;
+	}
+
+	#header .flex {
+		position: static;
+		justify-content: space-between;
+	}
+
+	#action {
+		right: 1%;
+	}
+
+	.navbar {
+		top: 200px;
+		position: static;
+		display: block;
+		width: auto;
+		height: auto;
+		left: 900px;
+		margin-top: -20px;
+		padding: 0;
+		background: none;
+	}
+
+	.navbar .nav-items li {
+		display: inline-block;
+		margin-left: 50px;
+	}
+
+	.navbar .nav-items li a:hover {
+		color: #f5f5f5;
+	}
+
+	.hamburger-menu {
+		display: none !important;
+	}
+
+	.author .logo {
+		width: 44px;
+		height: 44px;
+		font-size: 28px;
+	}
+
+	.author .name {
+		font-size: 20px;
+	}
+
+	#intro, #services, #testimonials, #tech-stack {
+		padding: 0 80px;
+	}
+
+	#intro .flex {
+		width: 80%;
+		margin: 0 auto;
+		flex-wrap: no-wrap;
+		grid-gap: 40px;
+	}
+
+	.profile-image-bg {
+		width: 320px;
+		height: 320px;
+		margin: 0;
+	}
+
+	.profile-image-bg .profile-image {
+		width: 100%;
+		height: 100%;
+	}
+
+	.profile-image-bg .profile-image img {
+		width: 320px !important;
+	}
+
+	.info {
+		width: 450px;
+		text-align: left;
+	}
+
+	.info .description .title,
+	.info .description .name {
+		text-align: left;
+	}
+
+	.info .description .title h4 {
+		font-size: 16px !important;
+	}
+
+	.info .action {
+		display: flex;
+		justify-content: left;
+	}
+
+	.info .action div div {
+		display: inline-block;
+	}
+
+	#contact-me {
+		margin-left: 10px;
+	}
+
+	#services > .flex {
+		grid-gap: 30px;
+	}
+
+	.service.flex {
+		width: 48%;
+	}
+
+	#quote-big {
+		position: absolute;
+		right: 100px;
+		bottom: -25px;
+		z-index: -10;
+	}
+
+	.client-info .info {
+		width: 150px;
+	}
+
+	footer {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+/* end:  media query for responsiveness */
