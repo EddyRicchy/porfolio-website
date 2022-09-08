@@ -1,4 +1,9 @@
-<?php include_once('./partials/_header.php') ?>
+<!DOCTYPE html>
+<html>
+	<?php include_once('./partials/_head.php') ?>
+	<body>
+		<div class="container">
+			<?php include_once('./partials/_header.php') ?>
 			<section id="intro" style="transition: 1s">
 				<div class="flex">
 					<div class="profile-image-bg">

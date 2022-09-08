@@ -1,4 +1,9 @@
-<?php include_once('./partials/_header.php') ?>
+<!DOCTYPE html>
+<html>
+	<?php include_once('./partials/_head.php') ?>
+	<body>
+		<div class="container">
+			<?php include_once('./partials/_header.php') ?>
 			<section id="page-title">
 				<div class="page-title">
 					<h1>Portfolio</h1>
