@@ -10,8 +10,8 @@
 		<meta name="description" contnet="Porfolio website for web development"/>
 		<meta name="page-topic" content="Porfolio"/>
 		<meta name="page-type" content="Porfolio"/>
-		<link rel="stylesheet" href="/thestarkcoder/assets/css/index.css"/>
-		<link rel="stylesheet" href="/thestarkcoder/assets/css/portfolio.css"/>
+		<link rel="stylesheet" href="./assets/css/index.css"/>
+		<link rel="stylesheet" href="./assets/css/portfolio.css"/>
 		<link rel="stylesheet" href="./assets/css/contact.css"/>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,9 +51,9 @@
 					</div>
 					<div class="navbar">
 						<ul class="nav-items">
-							<li class="active about"><a href="/thestarkcoder/index.php">About me</a></li>
-							<li class="portfolio"><a href="/thestarkcoder/portfolio.php">Portfolio</a></li>
-							<li class="contact"><a href="/thestarkcoder/contact.php">Contact</a></li>
+							<li class="active about"><a href="./index.php">About me</a></li>
+							<li class="portfolio"><a href="./portfolio.php">Portfolio</a></li>
+							<li class="contact"><a href="./contact.php">Contact</a></li>
 							<li class="blog"><a href="https://wittybase.com">Blog</a></li>
 						</ul>
 					</div>
