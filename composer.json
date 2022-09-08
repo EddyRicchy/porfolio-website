@@ -1,0 +1,14 @@
+{
+    "name": "app/thestarkcoder",
+    "description": "portfolio website",
+    "authors": [
+        {
+            "name": "eddyricchy",
+            "email": "eddyricchy@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "2.3.0",
+        "auth0/auth0-php": "~4.0"
+    }
+}
