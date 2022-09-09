@@ -238,8 +238,8 @@
 			</section>
 			<?php include_once('./partials/_footer.php') ?>
 		</div>
-		<script src="./script.js" type="text/javascript"></script>
-		<script src="./download.js" type="text/javascript"></script>
-		<script src="./plugins/dctb-animate-scroll/js/animate-scroll.js" type="text/javascript"/></script>
+		<script src="./script.js" type="text/javascript" defer></script>
+		<script src="./download.js" type="text/javascript" defer></script>
+		<script src="./plugins/dctb-animate-scroll/js/animate-scroll.js" type="text/javascript" defer/></script>
 	</body>
 </html>

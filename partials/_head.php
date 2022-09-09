@@ -17,11 +17,11 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	<link rel="stylesheet" type="text/css" href="./plugins/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="./plugins/slick/slick-theme.css"/>
-	<script src="https://kit.fontawesome.com/262f0e05ce.js" crossorigin="anonymous"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="https://kit.fontawesome.com/262f0e05ce.js" crossorigin="anonymous" defer></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js" defer></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js" defer></script>
 	<script type="text/javascript" src="./plugins/slick/slick.min.js"></script>
 	<title>Righteous Edewor</title>
 </head>
