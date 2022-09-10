@@ -5,10 +5,10 @@ $email = $_POST['email'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
 $is_complete = false;
-$host = 'localhost';
-$user = 'root';
-$password = 'admin24';
-$db = 'jobs';
+$host = '';
+$user = '';
+$password = '';
+$db = '';
 $dsn = "mysql:host=$host;dbname=$db;charset=UTF8";
 
 if($fullname && $email && $subject && $message) {
